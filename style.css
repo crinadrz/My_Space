@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 .intro_scene
 {
   position: relative;
@@ -21,7 +22,7 @@
 .intro_scene .rocket
 {
   position: relative;
-  animation: animate 0.2s ease infinite;;
+  animation: animate 0.2s ease infinite;
 
 }
 
@@ -35,6 +36,23 @@
   {
     transform: translateY(2px);
   }
+}
+.intro_scene i{
+	position: absolute;
+	top: -200px;
+	background: rgba(199, 159, 27, 0.5);
+	animation: stars linear infinite;
+}
+
+
+@keyframes stars{
+	0%{
+		transform: translateY(0);
+	}
+
+	100%{
+		transform: translateY(100vh);
+	}
 }
 
 .intro_scene .rocket::before
@@ -58,5 +76,5 @@
   width: 5px;
   height: 200px;
   background: linear-gradient(#ffd803, transparent);
-  filter: blur(10px);
+  filter: blur(15px);
 }
